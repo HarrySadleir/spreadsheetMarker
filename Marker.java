@@ -9,20 +9,13 @@ public class Marker {
         try{ 
             Scanner input = new Scanner(f);            
             String[] ans = null;
-            
+            ArrayList<Student> = new ArrayList<Student>();
             while(input.hasNext()) {
                 String str = input.nextLine();
                 String[] vals = str.split(",");
                 if(vals[0].equals("Answer Key")) ans = vals;
                 else {
-                    int num = 0;
-                    int den = 0;
-                    for(int i = 1; i < vals.length; i++) {
-                        if(vals[i].equals(ans[i])) num++;
-                        den++;
-                    }
-                    
-                    System.out.println(vals[0] + "  " + num + "/" + den);
+                    Student s = new Student();
                 }
             }
         } 
